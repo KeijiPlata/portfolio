@@ -35,10 +35,12 @@ const Nav = () => {
                             </li>
                         ))
                     }
-                    <button className="bg-indigo-600 text-white font-[Poppins] py-2 px-6 rounded md:ml-8 hover:bg-indigo-400
-                    duration-500">
-                        Download CV
-                    </button>
+                    <a href="../src/cv/Plata_resume.pdf" download>
+                        <button className="bg-indigo-600 text-white font-[Poppins] py-2 px-6 rounded md:ml-8 hover:bg-indigo-400
+                        duration-500">
+                            Download CV
+                        </button>
+                    </a>
                 </ul>
             </div>
         </div>

@@ -5,7 +5,14 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Rubiks: ['Rubik Vinyl', 'cursive'],
+      },
+      colors: {
+        customBlue: "#96B9D0",
+      },
+    },
   },
   plugins: [],
 }

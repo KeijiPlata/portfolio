@@ -2,6 +2,7 @@ import React from "react";
 import { BsGithub } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
+import { TypeAnimation } from 'react-type-animation';
 
 const Introduction = () => {
     return(
@@ -13,7 +14,29 @@ const Introduction = () => {
                     <div>
                         <h2 className="lg:text-5xl text-4xl font-bold">Hi, I'm</h2>
                         <h2 className="lg:text-5xl text-4xl font-bold">Lord Miacky Keiji</h2>
-                        <p className="lg:text-xl md:text-lg">Web and app developer</p>
+                        <div className="lg:text-xl md:text-lg"> <TypeAnimation
+                                sequence={[
+                                    'Web Developer', 
+                                    2000, 
+                                    'App Developer', 
+                                    2000, 
+                                    'Python Developer', 
+                                    2000,
+                                    'Java Developer', 
+                                    2000,
+                                    'Student', 
+                                    2000,
+                                    'President Lister', 
+                                    2000,
+                                    'I Love Programming!',
+                                    2000,
+                                ]}
+                                wrapper="div"
+                                cursor={true}
+                                repeat={Infinity}
+                                />
+                        </div>
+                       
                     </div>
                     <div className="flex flex-row gap-2">
                         <a href="../src/cv/Plata_resume.pdf" download>

@@ -64,6 +64,8 @@ const Introduction = () => {
                     <div style={{
                         backgroundImage: `url("${background}")`
                     }} className="lg:w-96 md:h-full md:w-80 w-96 h-full bg-cover bg-center absolute self-center"></div>
+                    <div className="lg:w-28 lg:h-28 md:w-24 md:h-24 w-28 h-28 rounded-full absolute bg-white self-center lg:mr-72 md:mr-60 mr-72 mb-10 lg:text-xl md:text-lg text-xl text-customBlue 
+                    flex items-center justify-center font-[Poppins] font-bold text-center -rotate-[17deg]"><h2>Hire me!</h2></div>
                     <div><h2>LORD MIACKY KEIJI PLATA</h2></div>
                     <div><h2>LORD MIACKY KEIJI PLATA</h2></div>
                     <div><h2>LORD MIACKY KEIJI PLATA</h2></div>

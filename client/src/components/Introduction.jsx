@@ -11,7 +11,7 @@ const Introduction = () => {
     return(
         <div className="px-4">
                 {/* parent of two grids */}
-                <div className="m-auto w-100 lg:h-[450px] md:h-[350px] h-[650px] bg-customBlue rounded-md mt-28 grid md:grid-cols-2 grid-cols-1 mb-44">
+                <div className=" w-100 lg:h-[450px] md:h-[350px] h-[650px] bg-customBlue rounded-md mt-28 grid md:grid-cols-2 grid-cols-1">
 
                 {/* grid cols 1 */}
                 <div className="text-white  flex flex-col gap-3 justify-center lg:pl-10 py-5 pl-5 order-last md:order-1">

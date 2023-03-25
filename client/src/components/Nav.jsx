@@ -17,7 +17,7 @@ const Nav = () => {
             <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
                 <div className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins]
                 text-gray-800">
-                    <span className="text-2xl text-indigo-600 mr-1">
+                    <span className="text-2xl text-customBlue mr-1">
                         <GiMineralHeart />
                     </span>
                     Plata.
@@ -36,7 +36,7 @@ const Nav = () => {
                         ))
                     }
                     <a href="../src/cv/Plata_resume.pdf" download>
-                        <button className="bg-indigo-600 text-white font-[Poppins] py-2 px-6 rounded md:ml-8 hover:bg-indigo-400
+                        <button className="bg-customBlue text-white font-[Poppins] py-2 px-6 rounded md:ml-8 hover:bg-customlightBlue
                         duration-500">
                             Download CV
                         </button>

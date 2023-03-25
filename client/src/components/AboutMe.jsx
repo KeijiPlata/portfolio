@@ -8,14 +8,14 @@ const AboutMe = () => {
     return(
         <div className="px-4">
             <div className=" w-100 md:h-[500px] h-[650px] md:mt-10 mt-1 mb-24 grid md:grid-cols-3 grid-cols-1">
-                <div className=" md:flex md:justify-center hidden" data-aos="fade-right" data-aos-duration="1500">
+                <div className=" md:flex md:justify-center hidden">
                 <div style={{
                         backgroundImage: `url("${background}")`
                     }} className="lg:w-[18rem] md:w-[17rem] md:h-[23rem] lg:h-[25rem] hidden md:block bg-cover bg-center self-center" 
-                    ></div>
+                    data-aos="fade-up" data-aos-duration="1500"></div>
                 </div>
-                <div className="p-7 md:col-span-2" data-aos="fade-left" data-aos-duration="1500">
-                    <div>
+                <div className="p-7 md:col-span-2">
+                    <div data-aos="fade-up" data-aos-duration="1500">
                         <h3 className="text-customBlue font-bold text-xl text-center md:text-left">Discover</h3>
                         <h2 className="text-4xl text-center md:text-left font-bold underline
                          decoration-customBlue decoration-[4px] underline-offset-[9px]">About Me</h2>
@@ -24,7 +24,7 @@ const AboutMe = () => {
                         Passionate about technology and eager to contribute to the industry through a challenging and dynamic work
                         environment.</p>
                     </div>
-                    <div className="flex md:flex-row flex-col md:justify-between text-center md:text-left mt-4 md:mt-5 border-dashed gap-2 border-[4px] lg:p-8 p-4 border-customlightBlue lg:mt-8">
+                    <div className="flex md:flex-row flex-col md:justify-between text-center md:text-left mt-4 md:mt-5 border-dashed gap-2 border-[4px] lg:p-8 p-4 border-customBlue lg:mt-8" data-aos="fade-up" data-aos-duration="1500">
                         <ul>
                             <li><span className="font-bold">Name:</span> Lord Miacky Keiji Plata</li>
                             <li><span className="font-bold">Age:</span> 21</li>

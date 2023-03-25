@@ -12,12 +12,12 @@ AOS.init();
 const Introduction = () => {
     const [animate, setAnimate] = useState(false);
     return(
-        <div className="px-4 mt-28">
+        <div className="px-4 mt-28" data-aos="fade-up" data-aos-duration="1500">
                 {/* parent of two grids */}
                 <div className=" w-100 lg:h-[450px] md:h-[350px] h-[650px] bg-customBlue rounded-md grid md:grid-cols-2 grid-cols-1">
 
                 {/* grid cols 1 */}
-                <div className="text-white  flex flex-col gap-3 justify-center lg:pl-10 py-5 pl-5 order-last md:order-1" data-aos="fade-right" data-aos-duration="1500">
+                <div className="text-white  flex flex-col gap-3 justify-center lg:pl-10 py-5 pl-5 order-last md:order-1">
                     <div>
                         <h2 className="lg:text-5xl text-4xl font-bold">Hi, I'm</h2>
                         <h2 className="lg:text-5xl text-4xl font-bold">Lord Miacky Keiji</h2>
@@ -65,7 +65,7 @@ const Introduction = () => {
                 </div>
 
                 {/* grid cols 2 */}
-                <div className=" order-2 font-Rubiks text-white lg:text-7xl text-6xl flex flex-nowrap justify-center flex-col truncate relative" data-aos="fade-left" data-aos-duration="1500">
+                <div className=" order-2 font-Rubiks text-white lg:text-7xl text-6xl flex flex-nowrap justify-center flex-col truncate relative">
                     <div style={{
                         backgroundImage: `url("${background}")`
                     }} className="lg:w-96 md:h-full md:w-80 w-96 h-full bg-cover bg-center absolute self-center"></div>

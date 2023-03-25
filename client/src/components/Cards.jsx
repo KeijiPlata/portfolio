@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
+import 'animate.css';
 
 function Cards ({icon, name}) {
+    const [animate, setAnimate] = useState(false);
+
     return(
-        <div className=" flex justify-center items-center">
-        <div className="border-4 w-32 h-40 rounded-lg border-white flex flex-col justify-center items-center">
-            <div className="text-white text-6xl">
+        <div className=" flex justify-center items-center p-2">
+        <div onMouseEnter={() => setAnimate(true)} onMouseLeave={() => setAnimate(false)} className={`
+        border-4 md:w-24 md:h-36 lg:w-40 lg:h-40 h-40 w-36 rounded-lg border-white border-dashed gap-2 flex flex-col justify-center items-center
+        text-white font-bold hover:bg-white hover:text-customBlue cursor-pointer ${animate ? "animate__animated animate__tada": ""}`}>
+            <div className="lg:text-6xl md:text-4xl text-5xl">
                {icon}
             </div>
-            <h3 className="text-white">{name}</h3>
+            <h3 className="lg:text-lg md:text-base text-sm">{name}</h3>
         </div>
     </div>
     );

@@ -12,7 +12,7 @@ AOS.init();
 const Introduction = () => {
     const [animate, setAnimate] = useState(false);
     return(
-        <div className="px-4 mt-28" data-aos="fade-up" data-aos-duration="1500">
+        <div className="px-4 mt-24 md:mb-0 mb-20 " data-aos="fade-down" data-aos-duration="1500">
                 {/* parent of two grids */}
                 <div className=" w-100 lg:h-[450px] md:h-[350px] h-[650px] bg-customBlue rounded-md grid md:grid-cols-2 grid-cols-1">
 
@@ -52,7 +52,7 @@ const Introduction = () => {
                                 Download CV
                             </button>
                         </a>
-                        <div className="flex flex-row gap-3 items-center text-3xl">
+                        <div className="flex flex-row md:gap-3 gap-2 items-center text-3xl">
                             <a href="https://github.com/KeijiPlata" target="_blank" className="
                             duration-500 hover:text-customlightBlue"><BsGithub /></a>
                             <a href="https://www.facebook.com/lordmiackykeiji" target="_blank" className="

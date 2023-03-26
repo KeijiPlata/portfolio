@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import AboutMe from './components/AboutMe'
 import Introduction from './components/Introduction'
+import LatestProject from './components/LatestProjects'
 import Nav from './components/Nav'
 import Skills from './components/Skills'
 
@@ -13,6 +14,7 @@ function App() {
       <Introduction />
       <AboutMe />
       <Skills />
+      <LatestProject />
     </div>
   )
 }

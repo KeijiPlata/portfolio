@@ -17,6 +17,7 @@ const Skills = () => {
         {icon: <SiHtml5 />, name: "HTML"},
         {icon: <SiCss3 />, name: "CSS"},
         {icon: <SiTailwindcss />, name: "Tailwind"},
+      
 
     ]
     return(

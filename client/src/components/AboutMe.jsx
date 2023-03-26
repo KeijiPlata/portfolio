@@ -7,7 +7,7 @@ AOS.init();
 const AboutMe = () => {
     return(
         <div className="px-4">
-            <div className=" w-100 md:h-[480px] h-[575px] md:mt-10 mt-1 mb-3 grid md:grid-cols-3 grid-cols-1">
+            <div className=" w-100 md:h-[480px] h-[575px] md:mt-10 mt-1 md:mb-3 mb-7 grid md:grid-cols-3 grid-cols-1">
                 <div className=" md:flex md:justify-center hidden">
                 <div style={{
                         backgroundImage: `url("${background}")`
@@ -24,7 +24,7 @@ const AboutMe = () => {
                         Passionate about technology and eager to contribute to the industry through a challenging and dynamic work
                         environment.</p>
                     </div>
-                    <div className="flex md:flex-row flex-col md:justify-between text-center md:text-left mt-4 md:mt-5 
+                    <div className="flex md:flex-row flex-col md:justify-between text-center md:text-left mt-4 md:mt-5
                     border-dashed gap-2 border-[4px] lg:p-8 p-4 border-customBlue lg:mt-8 md:text-base text-sm" data-aos="fade-up" data-aos-duration="1500">
                         <ul>
                             <li><span className="font-bold">Name:</span> Lord Miacky Keiji Plata</li>

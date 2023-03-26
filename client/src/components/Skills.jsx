@@ -25,7 +25,7 @@ const Skills = () => {
             <h2 className="text-center text-4xl font-bold underline decoration-customBlue
              decoration-4 underline-offset-[9px]" data-aos="fade-up" data-aos-duration="1500">My Skills</h2>
             <div className="bg-customBlue rounded-md w-100 md:h-[375px] lg:h-[425px] h-[720px] mt-10 mb-24 grid md:grid-cols-3 grid-cols-1">
-                <div className="col-span-2 grid md:grid-cols-5 grid-cols-3 lg:p-6 md:p-4" data-aos="fade-up" data-aos-duration="1500">
+                <div className="col-span-2 grid md:grid-cols-5 grid-cols-3 lg:p-6 md:p-4">
                     {data.map ((item, index) => (
                         <Cards key={index} icon={item.icon} name={item.name} />
                     ))}

@@ -6,7 +6,7 @@ AOS.init();
 
 const AboutMe = () => {
     return(
-        <div className="px-4">
+        <div className="px-4" id="about">
             <div className=" w-100 md:h-[480px] h-[575px] md:mt-10 mt-1 md:mb-3 mb-7 grid md:grid-cols-3 grid-cols-1">
                 <div className=" md:flex md:justify-center hidden">
                 <div style={{

@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         Rubiks: ['Rubik Vinyl', 'cursive'],
+        Poppins: ['Poppins', 'sans-serif'],
       },
       colors: {
         customBlue: "#96B9D0",

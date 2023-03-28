@@ -4,6 +4,9 @@ import { FaPython, FaJava, FaReact, FaGitAlt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiCplusplus, SiMysql, SiHtml5, SiCss3, SiTailwindcss } from "react-icons/si";
 import Cards from "./Cards"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 const Skills = () => {
     const data = [
@@ -17,6 +20,7 @@ const Skills = () => {
         {icon: <SiHtml5 />, name: "HTML"},
         {icon: <SiCss3 />, name: "CSS"},
         {icon: <SiTailwindcss />, name: "Tailwind"},
+      
 
     ]
     return(

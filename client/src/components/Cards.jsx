@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import 'animate.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 function Cards ({icon, name}) {
     const [animate, setAnimate] = useState(false);

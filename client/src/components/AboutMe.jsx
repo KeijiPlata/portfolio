@@ -25,7 +25,7 @@ const AboutMe = () => {
                         environment.</p>
                     </div>
                     <div className="flex md:flex-row flex-col md:justify-between text-center md:text-left mt-4 md:mt-5
-                    border-dashed gap-2 border-[4px] lg:p-8 p-4 border-customBlue lg:mt-8 md:text-base text-sm" data-aos="fade-up" data-aos-duration="1500">
+                    border-dashed gap-2 border-[4px] lg:p-8 p-4 rounded-lg border-customBlue lg:mt-8 md:text-base text-sm" data-aos="fade-up" data-aos-duration="1500">
                         <ul>
                             <li><span className="font-bold">Name:</span> Lord Miacky Keiji Plata</li>
                             <li><span className="font-bold">Age:</span> 21</li>

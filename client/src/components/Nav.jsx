@@ -2,16 +2,18 @@ import React, { useState } from "react";
 import { GiMineralHeart } from "react-icons/gi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
+import { Link } from "react-scroll";
 
 
 const Nav = () => {
     const Links = [
-        {name: "Home", link:"/"},
-        {name: "About", link:"/"},
-        {name: "Projects", link:"/"},
+        {name: "Home", link:"intro"},
+        {name: "About", link:"about"},
+        {name: "Projects", link:"projects"},
     ]; 
 
     const [open, setOpen] = useState(false);
+
     return(
         <div className="shadow-md w-full fixed top-0 left-0 z-50">
             <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
@@ -31,7 +33,16 @@ const Nav = () => {
                     {
                         Links.map((link)=>(
                             <li key={link.name} className="md:ml-8 text-xl md:my-0 my-7">
-                                <a href={link.link} className="text-gray-800 hover:text-gray-400 duration-500">{link.name}</a>
+                                <Link 
+                                to={link.link}
+                                key={link.name}
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                offset={-90}
+                                 className="text-gray-800 hover:text-customBlue duration-500"
+                                 >{link.name}
+                                 </Link>
                             </li>
                         ))
                     }

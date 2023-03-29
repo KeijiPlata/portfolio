@@ -3,6 +3,7 @@ import { GiMineralHeart } from "react-icons/gi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
 import { Link } from "react-scroll";
+import cv from '../cv/LordPlata_resume.pdf'
 
 
 const Nav = () => {
@@ -46,7 +47,7 @@ const Nav = () => {
                             </li>
                         ))
                     }
-                    <a href="../src/cv/Plata_resume.pdf" download>
+                    <a href={cv} download>
                         <button className="bg-customBlue text-white font-[Poppins] py-2 px-6 rounded md:ml-8 hover:bg-customlightBlue
                         duration-500">
                             Download CV

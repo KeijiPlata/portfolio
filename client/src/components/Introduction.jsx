@@ -4,6 +4,7 @@ import { BsGithub } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import { TypeAnimation } from 'react-type-animation';
+import cv from '../cv/LordPlata_resume.pdf'
 import 'animate.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -46,7 +47,7 @@ const Introduction = () => {
                        
                     </div>
                     <div className="flex flex-row gap-4">
-                        <a href="../src/cv/Plata_resume.pdf" download>
+                        <a href={cv} download>
                             <button className="bg-white text-customBlue py-1 px-4 rounded hover:bg-customlightBlue
                             duration-500 hover:text-white font-bold">
                                 Download CV
@@ -70,7 +71,7 @@ const Introduction = () => {
                         backgroundImage: `url("${background}")`
                     }} className="lg:w-96 md:h-full md:w-80 w-96 h-full bg-cover bg-center absolute self-center"></div>
                     <div onMouseEnter={() => setAnimate(true)} onMouseLeave={() => setAnimate(false)} className={`lg:w-28 lg:h-28 md:w-24 md:h-24 w-28 h-28 rounded-full absolute bg-white self-center lg:mr-72 md:mr-60 mr-44 mb-28 lg:text-xl md:text-lg text-xl text-customBlue 
-                    flex items-center justify-center font-[Poppins] font-bold text-center -rotate-[17deg] cursor-pointer ${animate ? "animate__animated animate__shakeY": ""}`}><h2>Hire me!</h2></div>
+                    flex items-center justify-center font-[Poppins] font-bold text-center -rotate-[17deg] ${animate ? "animate__animated animate__shakeY": ""}`}><h2>Hire me!</h2></div>
                     <div><h2 >LORD MIACKY KEIJI PLATA</h2></div>
                     <div><h2>LORD MIACKY KEIJI PLATA</h2></div>
                     <div><h2>LORD MIACKY KEIJI PLATA</h2></div>

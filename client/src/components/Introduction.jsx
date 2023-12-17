@@ -4,7 +4,7 @@ import { BsGithub } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import { TypeAnimation } from 'react-type-animation';
-import cv from '../cv/LordPlata_resume.pdf'
+import cv from '../cv/Plata_Resume.pdf'
 import 'animate.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';

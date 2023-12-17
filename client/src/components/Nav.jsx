@@ -3,7 +3,7 @@ import { GiMineralHeart } from "react-icons/gi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
 import { Link } from "react-scroll";
-import cv from '../cv/LordPlata_resume.pdf'
+import cv from '../cv/Plata_Resume.pdf'
 
 
 const Nav = () => {

@@ -5,6 +5,11 @@ import "aos/dist/aos.css";
 AOS.init();
 
 const AboutMe = () => {
+  const data = [
+    { months: "12+", info: "Months of Experience" },
+    { months: "6+", info: "Joined Competitions" },
+    { months: "4+", info: "Projects Completed" },
+  ];
   return (
     <div className="px-4" id="about">
       {/* parent */}
@@ -49,18 +54,14 @@ const AboutMe = () => {
             data-aos="fade-up"
             data-aos-duration="1500"
           >
-            <div className="bg-customBlue rounded-md md:p-4 p-2">
-              <h2 className="md:text-5xl text-4xl font-bold">12+</h2>
-              <h3 className="text-sm md:text-base">Month of Experience</h3>
-            </div>
-            <div className="bg-customBlue rounded-md md:p-4 p-2">
-              <h2 className="md:text-5xl text-4xl font-bold">6+</h2>
-              <h3 className="text-sm md:text-base">Joined Competitions</h3>
-            </div>
-            <div className="bg-customBlue rounded-md md:p-4 p-2">
-              <h2 className="md:text-5xl text-4xl font-bold">4+</h2>
-              <h3 className="text-sm md:text-base">Projects Completed</h3>
-            </div>
+            {data.map((item) => (
+              <div className="bg-customBlue rounded-md md:p-4 p-2">
+                <h2 className="md:text-5xl text-4xl font-bold">
+                  {item.months}
+                </h2>
+                <h3 className="text-sm md:text-base">{item.info}</h3>
+              </div>
+            ))}
           </div>
         </div>
       </div>

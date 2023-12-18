@@ -8,7 +8,7 @@ const AboutMe = () => {
   return (
     <div className="px-4" id="about">
       {/* parent */}
-      <div className=" w-100 md:h-[480px] h-[575px] md:mt-10 mt-1 md:mb-3 mb-7 grid md:grid-cols-3 grid-cols-1">
+      <div className=" w-100 md:h-[515px] h-[600px] md:mt-10 mt-1 md:mb-3 mb-7 grid md:grid-cols-3 grid-cols-1">
         {/* first child */}
         <div className=" md:flex md:justify-center hidden">
           <div
@@ -45,21 +45,21 @@ const AboutMe = () => {
             </p>
           </div>
           <div
-            className="flex flex-row md:text-left mt-4 gap-2 md:text-base text-sm"
+            className="flex flex-row justify-center md:justify-start mt-4 gap-2 text-white"
             data-aos="fade-up"
             data-aos-duration="1500"
           >
-            <div>
-              <h2>12+</h2>
-              <h3>Month of Experience</h3>
+            <div className="bg-customBlue rounded-md md:p-4 p-2">
+              <h2 className="md:text-5xl text-4xl font-bold">12+</h2>
+              <h3 className="text-sm md:text-base">Month of Experience</h3>
             </div>
-            <div>
-              <h2>12+</h2>
-              <h3>Month of Experience</h3>
+            <div className="bg-customBlue rounded-md md:p-4 p-2">
+              <h2 className="md:text-5xl text-4xl font-bold">6+</h2>
+              <h3 className="text-sm md:text-base">Joined Competitions</h3>
             </div>
-            <div>
-              <h2>12+</h2>
-              <h3>Month of Experience</h3>
+            <div className="bg-customBlue rounded-md md:p-4 p-2">
+              <h2 className="md:text-5xl text-4xl font-bold">4+</h2>
+              <h3 className="text-sm md:text-base">Projects Completed</h3>
             </div>
           </div>
         </div>

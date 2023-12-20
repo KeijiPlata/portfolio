@@ -3,6 +3,7 @@ import background from "../images/hackermanDesign.png"
 import { FaPython, FaJava, FaReact, FaGitAlt, FaBootstrap, FaFigma, FaPhp } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiCplusplus, SiMysql, SiHtml5, SiCss3, SiTailwindcss, SiServerless } from "react-icons/si";
+import xanoLogo from "../images/cutbgxano.png"
 import Cards from "./Cards"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -24,6 +25,7 @@ const Skills = () => {
         {icon: <FaBootstrap />, name: "Bootstrap", link: "https://getbootstrap.com/docs/5.3/getting-started/introduction/"},
         {icon: <FaFigma />, name: "Figma", link: "https://www.figma.com/ui-design-tool/"},
         {icon: <FaPhp/>, name: "Php", link: "https://www.php.net/manual/en/index.php"},
+        {icon: <img src={xanoLogo} style={{ width: "4rem", height: "4rem" }} alt=""/>, name: "Xano", link: "https://www.php.net/manual/en/index.php"}
 
       
 

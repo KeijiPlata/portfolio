@@ -25,7 +25,7 @@ const Skills = () => {
         {icon: <FaBootstrap />, name: "Bootstrap", link: "https://getbootstrap.com/docs/5.3/getting-started/introduction/"},
         {icon: <FaFigma />, name: "Figma", link: "https://www.figma.com/ui-design-tool/"},
         {icon: <FaPhp/>, name: "Php", link: "https://www.php.net/manual/en/index.php"},
-        {icon: <img src={xanoLogo} style={{ width: "4rem", height: "4rem" }} alt=""/>, name: "Xano", link: "https://www.php.net/manual/en/index.php"}
+        {icon: <img src={xanoLogo} style={{ width: "4rem", height: "4rem" }} alt=""/>, name: "Xano", link: "https://www.xano.com/"}
 
       
 

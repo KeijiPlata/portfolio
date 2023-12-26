@@ -14,7 +14,7 @@ const LatestProject = () => {
         {name: "Glympse", image: glympse, link: "https://keijiplata.github.io/Glympse/"},
     ]
     return(
-        <div className="px-4 mb-20" id="projects">
+        <div className="px-4 my-20" id="projects">
              <h3 className="text-center text-customBlue font-bold text-xl" 
              data-aos="fade-up" data-aos-duration="1500">Portfolio</h3>
             <h2 className="text-center text-4xl font-bold underline decoration-customBlue

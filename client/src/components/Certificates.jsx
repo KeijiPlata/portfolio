@@ -8,11 +8,17 @@ import { MdOpenInNew } from "react-icons/md";
 
 const Certificates = () => {
   const data = [
-    {title: "National Certificate III (Java)", description: "This is a description for the national certificate III. Design lang muna focus pero description yan bitch.", tags: ["TESDA", "Joysis"]}
+    {title: "National Certificate III (Java)", description: "This is a description for the national certificate III. Design lang muna focus pero description yan bitch.", tags: ["TESDA", "Joysis"], link: "https://drive.google.com/file/d/1ExkIcwsmW_9qsKmS50XZWfjIQBXRzgE_/view?usp=sharing"},
+    {title: "Creative Web Design", description: "This is a description for the national certificate III. Design lang muna focus pero description yan bitch.", tags: ["TESDA", "MindTech"], link: "https://drive.google.com/file/d/1iS0s7XcD9dEEZ-r6EWC_TJhXXnmWrjkw/view?usp=sharing"},
+    {title: "Finalist: AIA Lifehackers 2022 Hackventure", description: "This is a description for the national certificate III. Design lang muna focus pero description yan bitch.", tags: ["PUP", "AIA"], link: "https://drive.google.com/file/d/1BPOnaTI89FzfJ742EJTGzwGCrrHZm1dj/view?usp=sharing"},
+    {title: "Finalist: Undergraduate Research Competition 2023", description: "This is a description for the national certificate III. Design lang muna focus pero description yan bitch.", tags: ["PUP", "RIST"], link: "https://drive.google.com/file/d/1wHrwTGdQcBOl74Lq85tA0Z-NkyTMRYpj/view?usp=sharing"},
+    {title: "Best Presenter: PUP ITECH Research Symposium", description: "This is a description for the national certificate III. Design lang muna focus pero description yan bitch.", tags: ["PUP", "ITECH"], link: "https://drive.google.com/file/d/1uFpi2OTX-eqEK_to8F_fJizdsMwNCffR/view?usp=sharing"},
+    {title: "President Lister", description: "This is a description for the national certificate III. Design lang muna focus pero description yan bitch.", tags: ["PUP"], link: "https://drive.google.com/file/d/1ECla_kiU8pgHITptYq3MX_EICWRL7AEs/view?usp=sharing"}
+
   ]
   return (
     <div
-      className="w-100 lg:h-[600px] md:h-[700px] h-[1375px] md:mt-10 mt-1 md:mb-4 px-4 mb-10"
+      className="w-100 lg:h-[750px] md:h-[850px] h-[1750px] md:mt-10 mt-16 md:mb-4 px-4 mb-10"
       id="certificates"
     >
       <h3
@@ -37,9 +43,10 @@ const Certificates = () => {
       >
         {data.map ((item) => (
                   <div
-                  className="bg-customBlue text-white rounded-md p-7 flex flex-col gap-3"
+                  className="cursor-pointer bg-customBlue text-white rounded-md lg:p-6 md:p-5 p-4 flex flex-col justify-between gap-3"
                   data-aos="fade-up"
                   data-aos-duration="1500"
+                  onClick={() => window.open(item.link, "_blank")}
                 >
                   <div className="flex flex-row justify-between items-center">
                     <div className="w-12 h-12 rounded-lg bg-white flex justify-center items-center">
@@ -63,6 +70,7 @@ const Certificates = () => {
                       ))}
                   </div>
                 </div>
+          
         ))}
       </div>
     </div>

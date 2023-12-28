@@ -53,7 +53,7 @@ const Certificates = () => {
   ];
   return (
     <div
-      className="w-100 lg:h-[750px] md:h-[850px] h-[1750px] md:mt-10 mt-16 md:mb-4 px-4 mb-10"
+      className="w-100 lg:h-[800px] md:h-[900px] h-[1800px] md:mt-10 mt-16 md:mb-4 px-4 mb-10"
       id="certificates"
     >
       <h3
@@ -83,7 +83,7 @@ const Certificates = () => {
           onClick={() => window.open(item.link, "_blank")}
           >
           <div
-            className=" flex flex-col justify-between gap-3 hover:-translate-y-2 bg-customBlue rounded-md lg:p-6 md:p-5 p-4 transition ease-in-out delay-150 h-full"
+            className=" flex flex-col justify-between gap-3 hover:-translate-y-2 bg-customBlue rounded-md lg:p-6 md:p-5 p-4 transition ease-in-out h-full duration-200"
            
           >
             <div className="flex flex-row justify-between items-center">
@@ -111,6 +111,14 @@ const Certificates = () => {
           </div>
         ))}
       </div>
+      <h3
+        className="text-center text-customBlue text-xl my-5 font-bold font-Poppins hover:underline"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        onClick={() => window.open("https://drive.google.com/drive/folders/1y4AIc-ydoNfS413s02MD8zjGPLdy0Ltn?usp=drive_link", "_blank")}
+      >
+        View More
+      </h3>
     </div>
   );
 };

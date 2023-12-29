@@ -13,7 +13,7 @@ AOS.init();
 const Expertise = () => {
   return (
     <div
-      className="w-100 lg:h-[600px] md:h-[700px] h-[1375px] md:mt-10 mt-1 md:mb-4 px-4 mb-10"
+      className="w-100 lg:h-[700px] md:h-[800px] h-[1500px] md:mt-10 mt-1 md:mb-4 px-4 mb-10"
       id="experties"
     >
       <h3
@@ -38,7 +38,7 @@ const Expertise = () => {
         data-aos-duration="1500"
       >
         <div
-          className="bg-customBlue text-white rounded-md p-7 flex flex-col gap-3 md:order-1 order-1"
+          className="bg-customBlue text-white rounded-md lg:p-7 md:p-5 p-4 flex flex-col gap-3 md:order-1 order-1"
           data-aos="fade-up"
           data-aos-duration="1500"
         >
@@ -64,7 +64,7 @@ const Expertise = () => {
           </div>
         </div>
         <div
-          className="rounded-md border-4 border-dashed border-customBlue p-7 flex flex-col gap-3 md:order-2 order-2"
+          className="rounded-md border-4 border-dashed border-customBlue lg:p-7 md:p-5 p-4 flex flex-col gap-3 md:order-2 order-2"
           data-aos="fade-up"
           data-aos-duration="1500"
         >
@@ -91,7 +91,7 @@ const Expertise = () => {
         </div>
 
         <div
-          className="rounded-md border-4 border-dashed border-customBlue p-7 flex flex-col gap-3 md:order-3 order-4"
+          className="rounded-md border-4 border-dashed border-customBlue lg:p-7 md:p-5 p-4 flex flex-col gap-3 md:order-3 order-4"
           data-aos="fade-up"
           data-aos-duration="1500"
         >
@@ -117,7 +117,7 @@ const Expertise = () => {
           </div>
         </div>
         <div
-          className="bg-customBlue text-white rounded-md p-7 flex flex-col gap-3 md:order-4 order-3"
+          className="bg-customBlue text-white rounded-md lg:p-7 md:p-5 p-4 flex flex-col gap-3 md:order-4 order-3"
           data-aos="fade-up"
           data-aos-duration="1500"
         >

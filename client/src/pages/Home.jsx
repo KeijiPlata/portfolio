@@ -6,6 +6,7 @@ import Skills from "../components/Skills";
 import LatestProject from "../components/LatestProjects";
 import Footer from "../components/Footer";
 import Expertise from "../components/Expertise";
+import Certificates from "../components/Certificates";
 
 function Home() {
     return (
@@ -15,6 +16,7 @@ function Home() {
             <AboutMe />
             <Skills />
             <Expertise />
+            <Certificates />
             <LatestProject />
             <Footer />
         </div>

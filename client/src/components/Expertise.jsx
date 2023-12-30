@@ -4,13 +4,16 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 // icons
-import { FaTerminal } from "react-icons/fa";
+import { FaPaintBrush } from "react-icons/fa";
+import { FaCode } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
+import { FaCog } from "react-icons/fa";
 AOS.init();
 
 const Expertise = () => {
   return (
     <div
-      className="w-100 lg:h-[600px] md:h-[700px] h-[1375px] md:mt-10 mt-1 md:mb-4 px-4 mb-10"
+      className="w-100 lg:h-[700px] md:h-[800px] h-[1500px] md:mt-10 mt-1 md:mb-4 px-4 mb-10"
       id="experties"
     >
       <h3
@@ -35,95 +38,107 @@ const Expertise = () => {
         data-aos-duration="1500"
       >
         <div
-          className="bg-customBlue text-white rounded-md p-7 flex flex-col gap-3 md:order-1 order-1"
+          className="bg-customBlue text-white rounded-md lg:p-7 md:p-5 p-4 flex flex-col gap-3 md:order-1 order-1"
           data-aos="fade-up"
           data-aos-duration="1500"
         >
           <div className="flex flex-row gap-5 items-center">
             <div className="w-12 h-12 rounded-lg bg-white flex justify-center items-center">
               <div className="text-2xl text-customBlue">
-                <FaTerminal />
+                <FaPaintBrush />
               </div>
             </div>
 
-            <h3 className="text-xl font-bold font-Poppins">Development</h3>
+            <h3 className="text-xl font-bold font-Poppins">
+              Interactive User Experiences
+            </h3>
           </div>
           <div className="text-justify font-Poppins">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              With full stack expertise, I develop interactive web applications,
+              prioritizing user-centric design and seamless functionality for
+              compelling digital experiences. Combining creativity with
+              technical precision, I craft immersive digital experiences that
+              prioritize user-centric design and seamless functionality.
             </p>
           </div>
         </div>
         <div
-          className="rounded-md border-4 border-dashed border-customBlue p-7 flex flex-col gap-3 md:order-2 order-2"
+          className="rounded-md border-4 border-dashed border-customBlue lg:p-7 md:p-5 p-4 flex flex-col gap-3 md:order-2 order-2"
           data-aos="fade-up"
           data-aos-duration="1500"
         >
           <div className="flex flex-row gap-5 items-center">
             <div className="w-12 h-12 rounded-lg bg-customBlue flex justify-center items-center">
               <div className="text-2xl text-white">
-                <FaTerminal />
+                <FaCode />
               </div>
             </div>
 
-            <h3 className="text-xl font-bold font-Poppins">Development</h3>
+            <h3 className="text-xl font-bold font-Poppins">
+              Full Stack Development
+            </h3>
           </div>
           <div className="text-justify font-Poppins">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              As a full stack web developer, I specialize in crafting dynamic
+              and responsive websites by seamlessly integrating both front-end
+              and back-end technologies. My passion lies in creating robust and
+              user-friendly applications that deliver a seamless digital
+              experience.
             </p>
           </div>
         </div>
 
         <div
-          className="rounded-md border-4 border-dashed border-customBlue p-7 flex flex-col gap-3 md:order-3 order-4"
+          className="rounded-md border-4 border-dashed border-customBlue lg:p-7 md:p-5 p-4 flex flex-col gap-3 md:order-3 order-4"
           data-aos="fade-up"
           data-aos-duration="1500"
         >
           <div className="flex flex-row gap-5 items-center">
             <div className="w-12 h-12 rounded-lg bg-customBlue flex justify-center items-center">
               <div className="text-2xl text-white">
-                <FaTerminal />
+                <FaUser />
               </div>
             </div>
 
-            <h3 className="text-xl font-bold font-Poppins">Development</h3>
+            <h3 className="text-xl font-bold font-Poppins">
+              Collaborative Development
+            </h3>
           </div>
           <div className="text-justify font-Poppins">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Fostering a collaborative environment, I excel in working within
+              cross-functional teams to build web solutions that seamlessly
+              blend functionality and aesthetics. With a keen eye for effective
+              communication, I strive to create an inclusive atmosphere that
+              enhances teamwork and propels project success.
             </p>
           </div>
         </div>
         <div
-          className="bg-customBlue text-white rounded-md p-7 flex flex-col gap-3 md:order-4 order-3"
+          className="bg-customBlue text-white rounded-md lg:p-7 md:p-5 p-4 flex flex-col gap-3 md:order-4 order-3"
           data-aos="fade-up"
           data-aos-duration="1500"
         >
           <div className="flex flex-row gap-5 items-center">
             <div className="w-12 h-12 rounded-lg bg-white flex justify-center items-center">
               <div className="text-2xl text-customBlue">
-                <FaTerminal />
+                <FaCog />
               </div>
             </div>
 
-            <h3 className="text-xl font-bold font-Poppins">Development</h3>
+            <h3 className="text-xl font-bold font-Poppins">
+              Adaptable Development
+            </h3>
           </div>
           <div className="text-justify font-Poppins">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Thriving in the ever-evolving landscape of web technologies, I
+              bring adaptability to the forefront of my development approach. I
+              easily navigate through emerging frameworks and tools, ensuring
+              that my skill set is finely tuned to meet the dynamic demands of
+              the digital realm.
             </p>
           </div>
         </div>

@@ -1,80 +1,148 @@
 import React from "react";
 import { GiMineralHeart } from "react-icons/gi";
-import background from "../images/keijiCutdesign.png"
+import background from "../images/keijiCutdesign.png";
 import { BsGithub } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
-import { FaMobileAlt, FaEnvelope } from "react-icons/fa";
+import { FaMobileAlt, FaEnvelope, FaCoffee } from "react-icons/fa";
 import { BsFillTelephoneFill } from "react-icons/bs";
 
 const Footer = () => {
-    const data = [
-        {logo: <FaMobileAlt />, info: "09980752227"},
-        {logo: <FaEnvelope />, info: "lordmiackykeijip"},
-        {logo: <BsFillTelephoneFill />, info: "89971255"},
-        
-    ]
-    return(
-        <div className="bg-customBlue">
-        <div className="grid lg:grid-cols-4 grid-cols-2">
-           
-            <div className="p-4 flex justify-center items-center">
-                    <div>
-                    <div style={{
-                        backgroundImage: `url("${background}")`
-                    }} className=" w-44 h-56 bg-cover bg-center self-center"></div>
-                       
-                    </div>
-                </div>
-            <div className=" text-white p-4 flex flex-col justify-center">
-                <div className="flex items-center gap-1 text-2xl
-                    font-bold">
-                    <div>
-                        <GiMineralHeart />
-                    </div>
-                    <div className=" font-[Poppins]">
-                        <h2>Plata.</h2>
-                    </div>
-                    </div>
-                    <p className="text-justify text-sm md:text-base">This is my first portfolio website. Thank you for visiting!</p>
-                </div>
-                <div className=" text-white p-4 flex flex-col justify-start md:justify-center lg:items-center items-center">
-                <div>
-                    <h2 className="text-lg font-bold">Contact Me</h2>
-                        <ul>
-                            
-                            {
-                                data.map((data)=>(
-                                    <li key={data.info} className="flex items-center gap-1 text-sm md:text-base">
-                                        <span>{data.logo}</span>
-                                        {data.info}
-                                        </li>
-                                )) 
-                            }
-                        </ul>
-                </div>
-            </div>
-            <div className=" text-white p-4 flex flex-col justify-start md:justify-center items-center">
-                <div>
-                    <h2 className="text-lg font-bold mb-2">Follow Me</h2>
-                    <div className="flex flex-row md:gap-3 gap-2 items-center text-3xl">
-                            <a href="https://github.com/KeijiPlata" target="_blank" className="
-                            duration-500 hover:text-customlightBlue"><BsGithub /></a>
-                            <a href="https://www.facebook.com/lordmiackykeiji" target="_blank" className="
-                            duration-500 hover:text-customlightBlue"><BsFacebook /></a>
-                            <a href="https://www.linkedin.com/in/lord-miacky-keiji-plata/" target="_blank" className="
-                            duration-500 hover:text-customlightBlue"><BsLinkedin /></a>
-                        </div>  
-                </div>
-            </div>
-           
-        </div>
-        <div className="p-2">
-        <hr className="mx-auto my-2 bg-gray-100 border-1 rounded md:my-2"></hr>
-            <h2 className="text-center text-white">Copyright © 2023 Plata</h2>
-        </div>
-        </div>
-    )
-}
+  const data = [
+    { logo: <FaMobileAlt />, info: "09980752227", title: "Mobile" },
+    {
+      logo: <FaEnvelope />,
+      info: "lordmiackykeijip@gmail.com",
+      title: "Email",
+    },
+    { logo: <BsFillTelephoneFill />, info: "89971255", title: "Telephone" },
+    {
+      logo: <FaCoffee />,
+      info: "Cainta, Rizal, Philippines",
+      title: "Meet me",
+    },
+  ];
+  return (
+    <div className="bg-customBlue">
+      <div className="grid md:grid-cols-2 grid-cols-1 lg:p-10 md:p-8 p-6 md:gap-16 gap-14">
+        <div className="flex gap-2 md:justify-end justify-center items-center">
+          <div className="flex flex-col md:gap-10 gap-6 w-full">
+            <div className="flex flex-col gap-1">
+              <div className="bg-white w-28 rounded-lg flex justify-center items-center">
+                <h3 className="text-customBlue font-Poppins">Get in Touch</h3>
+              </div>
 
-export default Footer
+              <h2 className="text-white font-poppins lg:text-5xl md:text-4xl text-3xl font-bold">
+                Talk Or Meet With Me
+              </h2>
+            </div>
+            <div className="flex flex-col gap-6 w-full">
+              {data.map((item) => (
+                <div className="flex flex-row lg:gap-4 md:gap-3 gap-2 w-full">
+                  <div className="lg:w-14 lg:h-14 md:w-12 md:h-12 w-10 h-10 rounded-lg bg-white flex justify-center items-center">
+                    <div className="lg:text-3xl text-xl text-customBlue">
+                      {item.logo}
+                    </div>
+                  </div>
+                  <div className="flex flex-col">
+                    <h3 className="text-white font-bold lg:text-lg md:text-base text-sm font-Poppins ">
+                      {item.title}
+                    </h3>
+                    <h2 className="text-white font-Poppins lg:text-2xl md:text-lg text-base">
+                      {item.info}
+                    </h2>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="flex gap-2 md:justify-start justify-center items-center">
+          <div className="flex flex-col md:gap-10 gap-6 w-full">
+            <div className="flex flex-col gap-1">
+              <div className="bg-white w-36 rounded-lg flex justify-center items-center">
+                <h3 className="text-customBlue font-Poppins">
+                  Estimate Project
+                </h3>
+              </div>
+
+              <h2 className="text-white font-poppins lg:text-5xl md:text-4xl text-3xl font-bold">
+                Let Me Know Here
+              </h2>
+            </div>
+            <form className="flex flex-col gap-3 font-Poppins">
+              <input
+                type="text"
+                placeholder="Name"
+                className="p-3 rounded-md w-full"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                className="p-3 rounded-md w-full"
+              />
+              <textarea
+                name="description"
+                id=""
+                rows="5"
+                placeholder="Description"
+                className="w-full p-3 rounded-md"
+              ></textarea>
+              <input
+                type="submit"
+                value="Submit"
+                className="bg-white text-customBlue rounded-md p-2 font-bold w-1/3 hover:bg-customlightBlue hover:text-white duration-500"
+              ></input>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div className="bg-white py-7 md:py-4 px-8 md:px-5 grid md:grid-cols-2 grid-cols-1 gap-6">
+        <div className="flex flex-row md:gap-3 gap-2 items-center text-3xl md:justify-start justify-center">
+          <a
+            href="https://github.com/KeijiPlata"
+            target="_blank"
+            className="
+                            duration-500 hover:text-customlightBlue text-customBlue"
+          >
+            <BsGithub />
+          </a>
+          <a
+            href="https://www.facebook.com/lordmiackykeiji"
+            target="_blank"
+            className="
+                            duration-500 hover:text-customlightBlue text-customBlue"
+          >
+            <BsFacebook />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/lord-miacky-keiji-plata/"
+            target="_blank"
+            className="
+                            duration-500 hover:text-customlightBlue text-customBlue"
+          >
+            <BsLinkedin />
+          </a>
+        </div>
+        <div className="flex flex-row items-center md:justify-end justify-center w-full">
+          <div className="flex flex-row items-center md:justify-end justify-center w-4/5">
+            <h2 className="font-Poppins text-sm text-center md:text-left">
+              Designed in{" "}
+              <span className="font-bold text-customBlue">Figma</span>, Coded in{" "}
+              <span className="font-bold text-customBlue">
+                Visual Studio Code
+              </span>
+              , with <span className="font-bold text-customBlue">ReactJS</span>{" "}
+              and{" "}
+              <span className="font-bold text-customBlue">Tailwind CSS</span>,
+              Deployed with{" "}
+              <span className="font-bold text-customBlue">GitHub</span>.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;

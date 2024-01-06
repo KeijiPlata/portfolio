@@ -7,6 +7,7 @@ import LatestProject from "../components/LatestProjects";
 import Footer from "../components/Footer";
 import Expertise from "../components/Expertise";
 import Certificates from "../components/Certificates";
+import Experience from "../components/Experience";
 
 function Home() {
     return (
@@ -17,6 +18,7 @@ function Home() {
             <Skills />
             <Expertise />
             <Certificates />
+            <Experience />
             <LatestProject />
             <Footer />
         </div>

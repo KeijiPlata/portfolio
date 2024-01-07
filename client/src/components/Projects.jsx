@@ -6,25 +6,25 @@ AOS.init();
 function Projects({ name, image, link, description, tech }) {
   return (
     <div
-      className="p-7 rounded-lg bg-customBlue grid grid-cols-2 m-2 w-5/6 h-80 cursor-pointer"
+      className="group md:p-7 p-5 rounded-lg bg-customBlue grid md:grid-cols-2 grid-cols-1 gap-5  w-5/6  cursor-pointer"
       data-aos="flip-up"
       data-aos-duration="1500"
       onClick={() => window.open(link, "_blank")}
     >
-      <div className="flex flex-col justify-between gap-5 font-Poppins text-white w-4/5">
+      <div className="order-2 md:order-1 flex flex-col justify-between gap-5 font-Poppins text-white lg:w-4/5 w-full">
         <div className="flex flex-col gap-3">
-          <h2 className="text-2xl font-bold">{name}</h2>
-          <p className="text-justify">{description}</p>
+          <h2 className="lg:text-2xl text-xl font-bold">{name}</h2>
+          <p className="text-justify lg:text-base text-sm">{description}</p>
         </div>
 
-        <div className="flex flex-row gap-2 font-Poppins text-customBlue">
+        <div className="flex flex-row gap-2 font-Poppins text-customBlue flex-wrap">
           {tech.map((tag) => (
-            <p className="bg-white p-2 rounded-md">{tag}</p>
+            <p className="bg-white p-2 rounded-md text-sm md:text-base">{tag}</p>
           ))}
         </div>
       </div>
-      <div>
-        <h1>hello</h1>
+      <div className="order-1 md:order-2 flex flex-row justify-center items-center">
+        <img src={image} alt="" className="object-contain h-full w-full group-hover:scale-110 transition duration-500 ease-in-out" />
       </div>
     </div>
   );

@@ -17,14 +17,14 @@ const Expertise = () => {
       id="experties"
     >
       <h3
-        className="text-center text-customBlue font-bold text-xl"
+        className="text-center font-Poppins text-customBlue font-bold text-xl"
         data-aos="fade-up"
         data-aos-duration="1500"
       >
         Experties
       </h3>
       <h2
-        className="text-center text-4xl font-bold underline decoration-customBlue
+        className="text-center font-Poppins text-4xl font-bold underline decoration-customBlue
              decoration-4 underline-offset-[9px]"
         data-aos="fade-up"
         data-aos-duration="1500"

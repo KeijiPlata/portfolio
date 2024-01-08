@@ -31,7 +31,7 @@ const Skills = () => {
 
     ]
     return(
-        <div className="px-4">
+        <div className="px-4 font-Poppins">
             <h3 className="text-center text-customBlue font-bold text-xl" data-aos="fade-up" data-aos-duration="1500">Languages</h3>
             <h2 className="text-center text-4xl font-bold underline decoration-customBlue
              decoration-4 underline-offset-[9px]" data-aos="fade-up" data-aos-duration="1500">My Skills</h2>

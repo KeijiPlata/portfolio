@@ -20,9 +20,9 @@ const Introduction = () => {
                 {/* grid cols 1 */}
                 <div className="text-white  flex flex-col gap-3 justify-center lg:pl-10 py-5 pl-5 order-last md:order-1">
                     <div>
-                        <h2 className="lg:text-5xl text-4xl font-bold">Hi, I'm</h2>
-                        <h2 className="lg:text-5xl text-4xl font-bold">Lord Miacky Keiji</h2>
-                        <div className="lg:text-2xl text-xl"> <TypeAnimation
+                        <h2 className="lg:text-5xl text-4xl font-bold font-Poppins">Hi, I'm</h2>
+                        <h2 className="lg:text-5xl text-4xl font-bold font-Poppins">Lord Miacky Keiji</h2>
+                        <div className="lg:text-2xl text-xl font-Poppins"> <TypeAnimation
                                 sequence={[
                                     'Web Developer', 
                                     2000, 
@@ -49,7 +49,7 @@ const Introduction = () => {
                     <div className="flex flex-row gap-4">
                         <a href={cv} download>
                             <button className="bg-white text-customBlue py-1 px-4 rounded hover:bg-customlightBlue
-                            duration-500 hover:text-white font-bold">
+                            duration-500 hover:text-white font-bold font-Poppins">
                                 Download CV
                             </button>
                         </a>

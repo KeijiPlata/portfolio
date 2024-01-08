@@ -11,7 +11,7 @@ const AboutMe = () => {
     { months: "4+", info: "Projects Completed" },
   ];
   return (
-    <div className="px-4" id="about">
+    <div className="px-4 font-Poppins" id="about">
       {/* parent */}
       <div className=" w-100 md:h-[515px] h-[600px] md:mt-10 mt-1 md:mb-3 mb-7 grid md:grid-cols-3 grid-cols-1">
         {/* first child */}

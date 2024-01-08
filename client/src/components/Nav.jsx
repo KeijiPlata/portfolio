@@ -33,7 +33,7 @@ const Nav = () => {
                 ease-in ${open ? 'top-12 opacity-100' : 'top-[-490px] md:opacity-100 opacity-0'}`}>
                     {
                         Links.map((link)=>(
-                            <li key={link.name} className="md:ml-8 text-xl md:my-0 my-7">
+                            <li key={link.name} className="md:ml-8 text-xl md:my-0 my-7 font-Poppins">
                                 <Link 
                                 to={link.link}
                                 key={link.name}

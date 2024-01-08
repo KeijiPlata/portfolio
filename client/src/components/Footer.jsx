@@ -32,11 +32,11 @@ const Footer = () => {
                 <h3 className="text-customBlue font-Poppins">Get in Touch</h3>
               </div>
 
-              <h2 className="text-white font-poppins lg:text-5xl md:text-4xl text-3xl font-bold">
+              <h2 className="text-white font-Poppins lg:text-5xl md:text-4xl text-3xl font-bold">
                 Talk Or Meet With Me
               </h2>
             </div>
-            <div className="flex flex-col gap-6 w-full">
+            <div className="flex flex-col gap-6 w-full font-Poppins">
               {data.map((item) => (
                 <div className="flex flex-row lg:gap-4 md:gap-3 gap-2 w-full">
                   <div className="lg:w-14 lg:h-14 md:w-12 md:h-12 w-10 h-10 rounded-lg bg-white flex justify-center items-center">
@@ -66,7 +66,7 @@ const Footer = () => {
                 </h3>
               </div>
 
-              <h2 className="text-white font-poppins lg:text-5xl md:text-4xl text-3xl font-bold">
+              <h2 className="text-white font-Poppins lg:text-5xl md:text-4xl text-3xl font-bold">
                 Let Me Know Here
               </h2>
             </div>

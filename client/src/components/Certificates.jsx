@@ -53,7 +53,7 @@ const Certificates = () => {
   ];
   return (
     <div
-      className="w-100 lg:h-[800px] md:h-[950px] h-[1950px] md:mt-10 mt-16 md:mb-4 px-4 mb-10"
+      className="flex flex-col md:mt-10 mt-12 md:mb-4 px-4 mb-10"
       id="certificates"
     >
       <h3

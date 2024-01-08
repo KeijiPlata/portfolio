@@ -13,7 +13,7 @@ AOS.init();
 const Expertise = () => {
   return (
     <div
-      className="w-100 lg:h-[700px] md:h-[800px] h-[1500px] md:mt-10 mt-1 md:mb-4 px-4 mb-10"
+      className="flex flex-col md:mt-10 mt-1 md:mb-4 px-4 mb-10"
       id="experties"
     >
       <h3

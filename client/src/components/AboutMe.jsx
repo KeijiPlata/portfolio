@@ -11,9 +11,9 @@ const AboutMe = () => {
     { months: "4+", info: "Projects Completed" },
   ];
   return (
-    <div className="px-4 font-Poppins" id="about">
+    <div className="md:px-4 px-2  font-Poppins flex flex-col md:mt-12 mt-3 md:mb-3 mb-7" id="about">
       {/* parent */}
-      <div className=" w-100 md:h-[515px] h-[600px] md:mt-10 mt-1 md:mb-3 mb-7 grid md:grid-cols-3 grid-cols-1">
+      <div className=" grid md:grid-cols-3 grid-cols-1">
         {/* first child */}
         <div className=" md:flex md:justify-center hidden">
           <div
@@ -56,7 +56,7 @@ const AboutMe = () => {
           >
             {data.map((item) => (
               <div className="bg-customBlue rounded-md md:p-4 p-2">
-                <h2 className="md:text-5xl text-4xl font-bold">
+                <h2 className="md:text-5xl text-3xl font-bold">
                   {item.months}
                 </h2>
                 <h3 className="text-sm md:text-base">{item.info}</h3>

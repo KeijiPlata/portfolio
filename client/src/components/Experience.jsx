@@ -13,7 +13,7 @@ import { MdWork } from "react-icons/md";
 
 const Experience = () => {
   return (
-    <div className="flex flex-col gap-14 font-Poppins lg:py-10 md:py-14">
+    <div className="flex flex-col gap-14 font-Poppins lg:py-10 md:py-14" id="experience">
       <div>
         <h3
           className="text-center text-customBlue font-bold text-xl"

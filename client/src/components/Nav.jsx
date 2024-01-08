@@ -10,6 +10,8 @@ const Nav = () => {
     const Links = [
         {name: "Home", link:"intro"},
         {name: "About", link:"about"},
+        {name: "Certificates", link:"certificates"},
+        {name: "Experience", link:"experience"},
         {name: "Projects", link:"projects"},
     ]; 
 

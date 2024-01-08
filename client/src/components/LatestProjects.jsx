@@ -1,9 +1,9 @@
 import React from "react";
-import photorank from "../images/photorank.png";
-import glympse from "../images/glympse.png";
-import pupcafeteria from "../images/pupcafeteria.png";
 import Projects from "./Projects";
 import pilipinas from "../images/project-mockup-design.png";
+import cafeteria from "../images/project-mockup-design-caf.png";
+import rank from "../images/project-mockup-design-rank.png";
+import glympse from "../images/project-mockup-design-glympse.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
@@ -20,7 +20,7 @@ const LatestProject = () => {
     },
     {
       name: "PUP Cafeteria",
-      image: pilipinas,
+      image: cafeteria,
       link: "https://keijiplata.github.io/PUPCafeteria/",
       description:
         "Designed and implemented a static website for PUP Cafeteria, streamlining the food ordering process for students.",
@@ -28,7 +28,7 @@ const LatestProject = () => {
     },
     {
       name: "Photorank",
-      image: pilipinas,
+      image: rank,
       link: "https://keijiplata.github.io/photorank/",
       description:
         "Developed and deployed a dynamic static website catering to photography enthusiasts, offering a platform for showcasing and ranking photos.",
@@ -36,7 +36,7 @@ const LatestProject = () => {
     },
     {
       name: "Glympse",
-      image: pilipinas,
+      image: glympse,
       link: "https://keijiplata.github.io/Glympse/",
       description:
         "Glympse is your ultimate destination for a seamless and memorable photobooth experience, offering a diverse range of services that capture and celebrate every moment with creativity and style.",

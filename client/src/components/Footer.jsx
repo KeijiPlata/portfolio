@@ -1,13 +1,39 @@
 import React from "react";
-import { GiMineralHeart } from "react-icons/gi";
-import background from "../images/keijiCutdesign.png";
 import { BsGithub } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
+import { useForm, ValidationError } from "@formspree/react";
 import { FaMobileAlt, FaEnvelope, FaCoffee } from "react-icons/fa";
 import { BsFillTelephoneFill } from "react-icons/bs";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const Footer = () => {
+  const [state, handleSubmit] = useForm("xgegejbo");
+  if (state.succeeded) {
+    toast.success('Sent Successfully', {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      });
+  }
+  if (state.errors){
+    toast.error('Something went wrong ...', {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      });
+  }
   const data = [
     { logo: <FaMobileAlt />, info: "09980752227", title: "Mobile" },
     {
@@ -24,6 +50,7 @@ const Footer = () => {
   ];
   return (
     <div className="bg-customBlue">
+      <ToastContainer />
       <div className="grid md:grid-cols-2 grid-cols-1 lg:p-10 md:p-8 p-6 md:gap-16 gap-14">
         <div className="flex gap-2 md:justify-end justify-center items-center">
           <div className="flex flex-col md:gap-10 gap-6 w-full">
@@ -70,27 +97,53 @@ const Footer = () => {
                 Let Me Know Here
               </h2>
             </div>
-            <form className="flex flex-col gap-3 font-Poppins">
+            <form
+              className="flex flex-col gap-3 font-Poppins"
+              onSubmit={handleSubmit}
+            >
               <input
+                id="name"
+                name="Name"
                 type="text"
                 placeholder="Name"
                 className="p-3 rounded-md w-full"
+                required
+              />
+              <ValidationError
+                prefix="Name"
+                field="text"
+                errors={state.errors}
               />
               <input
+                id="email"
+                name="Email"
                 type="email"
                 placeholder="Email"
                 className="p-3 rounded-md w-full"
+                required
+              />
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
               />
               <textarea
-                name="description"
-                id=""
+                name="Description"
+                id="description"
                 rows="5"
                 placeholder="Description"
                 className="w-full p-3 rounded-md"
+                required
               ></textarea>
+              <ValidationError
+                prefix="Description"
+                field="description"
+                errors={state.errors}
+              />
               <input
                 type="submit"
                 value="Submit"
+                disabled={state.submitting}
                 className="bg-white text-customBlue rounded-md p-2 font-bold w-1/3 hover:bg-customlightBlue hover:text-white duration-500"
               ></input>
             </form>

@@ -35,7 +35,7 @@ const Nav = () => {
           {open ? <GrClose /> : <GiHamburgerMenu />}
         </div>
         <ul
-          className={`md:flex md:items-center md:pb-0 pb-7 absolute md:static bg-white dark:bg-customFrblack lg:bg-transparent lg:dark:bg-transparent
+          className={`md:flex md:items-center md:pb-0 pb-7 absolute md:static bg-white dark:bg-customFrblack md:bg-transparent md:dark:bg-transparent
                 md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 lg:transition-none lg:duration-0
                 ease-in ${
                   open
@@ -55,7 +55,7 @@ const Nav = () => {
                 smooth={true}
                 duration={500}
                 offset={-90}
-                className="text-black dark:text-white hover:text-customBlue"
+                className="text-black dark:text-white hover:text-customBlue cursor-pointer"
               >
                 {link.name}
               </Link>
@@ -64,7 +64,7 @@ const Nav = () => {
           <a href={cv} download>
             <button
               className="bg-customBlue dark:bg-customViolet text-white font-[Poppins] py-2 px-6 rounded md:ml-8 hover:bg-customlightBlue dark:hover:bg-customlightViolet
-                        duration-500"
+                        transition-all duration-500 font-bold"
             >
               Download CV
             </button>

@@ -105,7 +105,7 @@ const Introduction = ({darkMode}) => {
           <div
             onMouseEnter={() => setAnimate(true)}
             onMouseLeave={() => setAnimate(false)}
-            className={`lg:w-28 lg:h-28 md:w-24 md:h-24 w-28 h-28 rounded-full absolute bg-white self-center lg:mr-72 md:mr-60 mr-44 mb-28 lg:text-xl md:text-lg text-xl text-customBlue dark:text-customViolet transition-all duration-500
+            className={`lg:w-28 lg:h-28 md:w-24 md:h-24 w-24 h-24 rounded-full absolute bg-white self-center lg:mr-72 dark:lg:mr-72 md:mr-60 mr-44 mb-28 dark:mb-20 dark:mr-56 lg:text-xl md:text-lg text-lg text-customBlue dark:text-customViolet transition-all duration-500
                     flex items-center justify-center font-[Poppins] font-bold text-center -rotate-[17deg] ${
                       animate ? "animate__animated animate__shakeY" : ""
                     }`}

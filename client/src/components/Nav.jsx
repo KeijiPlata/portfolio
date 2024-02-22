@@ -18,7 +18,7 @@ const Nav = () => {
 
   return (
     <div className="shadow-md w-full fixed top-0 left-0 z-50">
-      <div className="md:flex items-center justify-between bg-white dark:bg-customFrblack transition-all duration-500 py-4 md:px-10 px-7">
+      <div className="md:flex items-center justify-between bg-white dark:bg-customFrblack transition-all duration-500 py-4 lg:px-10 px-6">
         <div
           className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins]
                 text-black dark:text-white"
@@ -46,7 +46,7 @@ const Nav = () => {
           {Links.map((link) => (
             <li
               key={link.name}
-              className="md:ml-8 text-xl md:my-0 my-7 font-Poppins"
+              className="lg:ml-8 md:ml-2 text-lg md:my-0 my-7 font-Poppins"
             >
               <Link
                 to={link.link}
@@ -63,7 +63,7 @@ const Nav = () => {
           ))}
           <a href={cv} download>
             <button
-              className="bg-customBlue dark:bg-customViolet text-white font-[Poppins] py-2 px-6 rounded md:ml-8 hover:bg-customlightBlue dark:hover:bg-customlightViolet
+              className="bg-customBlue dark:bg-customViolet text-white font-[Poppins] py-2 lg:px-6 px-4 rounded lg:ml-8 md:ml-3 hover:bg-customlightBlue dark:hover:bg-customlightViolet
                         transition-all duration-500 font-bold"
             >
               Download CV

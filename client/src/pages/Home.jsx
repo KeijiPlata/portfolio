@@ -31,7 +31,7 @@ function Home() {
       <Expertise />
       <Certificates />
       <Experience darkMode={darkMode}/>
-      <LatestProject />
+      <LatestProject darkMode={darkMode}/>
       <Footer />
     </div>
   );

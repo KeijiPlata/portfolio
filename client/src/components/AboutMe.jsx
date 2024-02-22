@@ -5,21 +5,26 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
 
-const AboutMe = ({darkMode}) => {
+const AboutMe = ({ darkMode }) => {
   const data = [
     { months: "12+", info: "Months of Experience" },
     { months: "6+", info: "Joined Competitions" },
     { months: "4+", info: "Projects Completed" },
   ];
   return (
-    <div className="md:px-4 px-2  font-Poppins flex flex-col md:mt-12 mt-3 md:mb-3 mb-7" id="about">
+    <div
+      className="md:px-4 px-2  font-Poppins flex flex-col md:mt-12 mt-3 md:mb-3 mb-7"
+      id="about"
+    >
       {/* parent */}
       <div className=" grid md:grid-cols-3 grid-cols-1 transition-all duration-500">
         {/* first child */}
         <div className=" md:flex md:justify-center hidden">
           <div
             style={{
-              backgroundImage: `url("${darkMode? backgroundDark: background}")`,
+              backgroundImage: `url("${
+                darkMode ? backgroundDark : background
+              }")`,
             }}
             className="lg:w-[18rem] md:w-[17rem] md:h-[23rem] lg:h-[25rem] hidden md:block bg-cover bg-center self-center transition-all duration-500"
             data-aos="fade-up"

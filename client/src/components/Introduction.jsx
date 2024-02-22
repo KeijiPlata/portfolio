@@ -11,7 +11,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
 
-const Introduction = ({darkMode}) => {
+const Introduction = ({ darkMode }) => {
   const [animate, setAnimate] = useState(false);
   return (
     <div
@@ -98,7 +98,9 @@ const Introduction = ({darkMode}) => {
         <div className=" order-2 font-Rubiks text-white lg:text-7xl text-6xl flex flex-nowrap justify-center flex-col truncate relative">
           <div
             style={{
-              backgroundImage: `url("${darkMode? backgroundDark : background}")`,
+              backgroundImage: `url("${
+                darkMode ? backgroundDark : background
+              }")`,
             }}
             className="lg:w-96 md:h-full md:w-80 w-96 h-full bg-cover bg-center absolute self-center transition-all duration-500"
           ></div>

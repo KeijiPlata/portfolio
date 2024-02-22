@@ -25,9 +25,9 @@ function Home() {
     >
       <Nav />
       <ToggleDarkMode toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
-      <Introduction darkMode={darkMode}/>
-      <AboutMe darkMode={darkMode}/>
-      <Skills />
+      <Introduction darkMode={darkMode} />
+      <AboutMe darkMode={darkMode} />
+      <Skills darkMode={darkMode} />
       <Expertise />
       <Certificates />
       <Experience />

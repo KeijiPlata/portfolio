@@ -6,12 +6,12 @@ import { useForm, ValidationError } from "@formspree/react";
 import { FaMobileAlt, FaEnvelope, FaCoffee } from "react-icons/fa";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { ToastContainer, toast } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 
 const Footer = () => {
   const [state, handleSubmit] = useForm("xgegejbo");
   if (state.succeeded) {
-    toast.success('Sent Successfully', {
+    toast.success("Sent Successfully", {
       position: "top-center",
       autoClose: 5000,
       hideProgressBar: false,
@@ -20,10 +20,10 @@ const Footer = () => {
       draggable: true,
       progress: undefined,
       theme: "light",
-      });
+    });
   }
-  if (state.errors){
-    toast.error('Something went wrong ...', {
+  if (state.errors) {
+    toast.error("Something went wrong ...", {
       position: "top-center",
       autoClose: 5000,
       hideProgressBar: false,
@@ -32,7 +32,7 @@ const Footer = () => {
       draggable: true,
       progress: undefined,
       theme: "light",
-      });
+    });
   }
   const data = [
     { logo: <FaMobileAlt />, info: "09980752227", title: "Mobile" },
@@ -49,14 +49,16 @@ const Footer = () => {
     },
   ];
   return (
-    <div className="bg-customBlue">
+    <div className="bg-customBlue dark:bg-customViolet transition-all duration-500">
       <ToastContainer />
       <div className="grid md:grid-cols-2 grid-cols-1 lg:p-10 md:p-8 p-6 md:gap-16 gap-14">
         <div className="flex gap-2 md:justify-end justify-center items-center">
           <div className="flex flex-col md:gap-10 gap-6 w-full">
             <div className="flex flex-col gap-1">
               <div className="bg-white w-28 rounded-lg flex justify-center items-center">
-                <h3 className="text-customBlue font-Poppins">Get in Touch</h3>
+                <h3 className="text-customBlue dark:text-customViolet transtion-all duration-500 font-Poppins">
+                  Get in Touch
+                </h3>
               </div>
 
               <h2 className="text-white font-Poppins lg:text-5xl md:text-4xl text-3xl font-bold">
@@ -67,7 +69,7 @@ const Footer = () => {
               {data.map((item) => (
                 <div className="flex flex-row lg:gap-4 md:gap-3 gap-2 w-full">
                   <div className="lg:w-14 lg:h-14 md:w-12 md:h-12 w-10 h-10 rounded-lg bg-white flex justify-center items-center">
-                    <div className="lg:text-3xl text-xl text-customBlue">
+                    <div className="lg:text-3xl text-xl text-customBlue dark:text-customViolet transition-all duration-500">
                       {item.logo}
                     </div>
                   </div>
@@ -88,7 +90,7 @@ const Footer = () => {
           <div className="flex flex-col md:gap-10 gap-6 w-full">
             <div className="flex flex-col gap-1">
               <div className="bg-white w-36 rounded-lg flex justify-center items-center">
-                <h3 className="text-customBlue font-Poppins">
+                <h3 className="text-customBlue dark:text-customViolet transition-all duration-500 font-Poppins">
                   Estimate Project
                 </h3>
               </div>
@@ -144,19 +146,19 @@ const Footer = () => {
                 type="submit"
                 value="Submit"
                 disabled={state.submitting}
-                className="bg-white text-customBlue rounded-md p-2 font-bold w-1/3 hover:bg-customlightBlue hover:text-white duration-500"
+                className="bg-white text-customBlue dark:text-customViolet rounded-md p-2 font-bold w-1/3 hover:bg-customlightBlue dark:hover:bg-customlightViolet hover:text-white dark:hover:text-white transition-all duration-500"
               ></input>
             </form>
           </div>
         </div>
       </div>
-      <div className="bg-white py-7 md:py-4 px-8 md:px-5 grid md:grid-cols-2 grid-cols-1 gap-6">
+      <div className="bg-slate-50 dark:bg-customBgblack py-7 md:py-4 px-8 md:px-5 grid md:grid-cols-2 grid-cols-1 gap-6">
         <div className="flex flex-row md:gap-3 gap-2 items-center text-3xl md:justify-start justify-center">
           <a
             href="https://github.com/KeijiPlata"
             target="_blank"
             className="
-                            duration-500 hover:text-customlightBlue text-customBlue"
+                            transition-all duration-500 hover:text-customlightBlue dark:hover:text-customlightViolet text-customBlue dark:text-customViolet"
           >
             <BsGithub />
           </a>
@@ -164,7 +166,7 @@ const Footer = () => {
             href="https://www.facebook.com/lordmiackykeiji"
             target="_blank"
             className="
-                            duration-500 hover:text-customlightBlue text-customBlue"
+                            transition-all duration-500 hover:text-customlightBlue dark:hover:text-customlightViolet text-customBlue dark:text-customViolet"
           >
             <BsFacebook />
           </a>
@@ -172,24 +174,35 @@ const Footer = () => {
             href="https://www.linkedin.com/in/lord-miacky-keiji-plata/"
             target="_blank"
             className="
-                            duration-500 hover:text-customlightBlue text-customBlue"
+                            transition-all duration-500 hover:text-customlightBlue dark:hover:text-customlightViolet text-customBlue dark:text-customViolet"
           >
             <BsLinkedin />
           </a>
         </div>
         <div className="flex flex-row items-center md:justify-end justify-center w-full">
           <div className="flex flex-row items-center md:justify-end justify-center w-4/5">
-            <h2 className="font-Poppins text-sm text-center md:text-left">
+            <h2 className="font-Poppins text-sm text-center md:text-left text-black dark:text-white transition-all duration-500">
               Designed in{" "}
-              <span className="font-bold text-customBlue">Figma</span>, Coded in{" "}
-              <span className="font-bold text-customBlue">
+              <span className="font-bold text-customBlue dark:text-customViolet transtion-all duration-500">
+                Figma
+              </span>
+              , Coded in{" "}
+              <span className="font-bold text-customBlue dark:text-customViolet transtion-all duration-500">
                 Visual Studio Code
               </span>
-              , with <span className="font-bold text-customBlue">ReactJS</span>{" "}
+              , with{" "}
+              <span className="font-bold text-customBlue dark:text-customViolet transtion-all duration-500">
+                ReactJS
+              </span>{" "}
               and{" "}
-              <span className="font-bold text-customBlue">Tailwind CSS</span>,
-              Deployed with{" "}
-              <span className="font-bold text-customBlue">GitHub</span>.
+              <span className="font-bold text-customBlue dark:text-customViolet transtion-all duration-500">
+                Tailwind CSS
+              </span>
+              , Deployed with{" "}
+              <span className="font-bold text-customBlue dark:text-customViolet transtion-all duration-500">
+                GitHub
+              </span>
+              .
             </h2>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Nav from "../components/Nav";
 import Introduction from "../components/Introduction";
 import AboutMe from "../components/AboutMe";
@@ -8,21 +8,33 @@ import Footer from "../components/Footer";
 import Expertise from "../components/Expertise";
 import Certificates from "../components/Certificates";
 import Experience from "../components/Experience";
+import ToggleDarkMode from "../components/ToggleDarkMode";
 
 function Home() {
-    return (
-        <div>
-            <Nav />
-            <Introduction />
-            <AboutMe />
-            <Skills />
-            <Expertise />
-            <Certificates />
-            <Experience />
-            <LatestProject />
-            <Footer />
-        </div>
-    )
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
+  return (
+    <div
+      className={`${darkMode && "dark"} ${
+        darkMode ? "bg-customBgblack" : "bg-slate-50"
+      } transition-all duration-500`}
+    >
+      <Nav />
+      <ToggleDarkMode toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
+      <Introduction darkMode={darkMode} />
+      <AboutMe darkMode={darkMode} />
+      <Skills darkMode={darkMode} />
+      <Expertise />
+      <Certificates />
+      <Experience darkMode={darkMode}/>
+      <LatestProject darkMode={darkMode}/>
+      <Footer />
+    </div>
+  );
 }
 
-export default Home
+export default Home;

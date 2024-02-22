@@ -158,7 +158,7 @@ const Footer = () => {
             href="https://github.com/KeijiPlata"
             target="_blank"
             className="
-                            transition-all duration-500 hover:text-customlightBlue dark:hover:text-customlightViolet text-customBlue dark:text-customViolet"
+                            transition-all duration-500 hover:text-customlightBlue dark:hover:text-customlightViolet text-customBlue dark:text-white"
           >
             <BsGithub />
           </a>
@@ -166,7 +166,7 @@ const Footer = () => {
             href="https://www.facebook.com/lordmiackykeiji"
             target="_blank"
             className="
-                            transition-all duration-500 hover:text-customlightBlue dark:hover:text-customlightViolet text-customBlue dark:text-customViolet"
+                            transition-all duration-500 hover:text-customlightBlue dark:hover:text-customlightViolet text-customBlue dark:text-white"
           >
             <BsFacebook />
           </a>
@@ -174,7 +174,7 @@ const Footer = () => {
             href="https://www.linkedin.com/in/lord-miacky-keiji-plata/"
             target="_blank"
             className="
-                            transition-all duration-500 hover:text-customlightBlue dark:hover:text-customlightViolet text-customBlue dark:text-customViolet"
+                            transition-all duration-500 hover:text-customlightBlue dark:hover:text-customlightViolet text-customBlue dark:text-white"
           >
             <BsLinkedin />
           </a>

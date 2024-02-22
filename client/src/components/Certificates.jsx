@@ -57,14 +57,14 @@ const Certificates = () => {
       id="certificates"
     >
       <h3
-        className="text-center text-customBlue font-Poppins font-bold text-xl"
+        className="text-center text-customBlue dark:text-customViolet transition-all duration-500 font-Poppins font-bold text-xl"
         data-aos="fade-up"
         data-aos-duration="1500"
       >
         Archive
       </h3>
       <h2
-        className="text-center font-Poppins text-4xl font-bold underline decoration-customBlue
+        className="text-center font-Poppins text-4xl font-bold underline decoration-customBlue dark:decoration-customViolet text-black dark:text-white transition-all duration-500
              decoration-4 underline-offset-[9px]"
         data-aos="fade-up"
         data-aos-duration="1500"
@@ -83,10 +83,10 @@ const Certificates = () => {
             data-aos-duration="1500"
             onClick={() => window.open(item.link, "_blank")}
           >
-            <div className=" flex flex-col justify-between gap-3 hover:-translate-y-2 bg-customBlue rounded-md lg:p-6 md:p-5 p-4 transition ease-in-out h-full duration-200">
+            <div className=" flex flex-col justify-between gap-3 hover:-translate-y-2 bg-customBlue dark:bg-customViolet rounded-md lg:p-6 md:p-5 p-4 transition-all ease-in-out h-full duration-500">
               <div className="flex flex-row justify-between items-center">
                 <div className="w-12 h-12 rounded-lg bg-white flex justify-center items-center">
-                  <div className="text-3xl text-customBlue">
+                  <div className="text-3xl text-customBlue dark:text-customViolet">
                     <LuFolder />
                   </div>
                 </div>
@@ -100,7 +100,7 @@ const Certificates = () => {
                 <p className="text-justify">{item.description}</p>
               </div>
 
-              <div className="flex flex-row gap-2 font-Poppins text-customBlue">
+              <div className="flex flex-row gap-2 font-Poppins text-customBlue dark:text-customViolet">
                 {item.tags.map((tag) => (
                   <p className="bg-white p-2 rounded-md">{tag}</p>
                 ))}
@@ -110,7 +110,7 @@ const Certificates = () => {
         ))}
       </div>
       <h3
-        className="text-center text-customBlue text-xl my-5 font-bold font-Poppins hover:underline"
+        className="text-center text-customBlue dark:text-customViolet transition-all duration-500 text-xl my-5 font-bold font-Poppins hover:underline"
         data-aos="fade-up"
         data-aos-duration="1500"
         onClick={() =>

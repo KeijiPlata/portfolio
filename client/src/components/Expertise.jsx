@@ -17,14 +17,14 @@ const Expertise = () => {
       id="experties"
     >
       <h3
-        className="text-center font-Poppins text-customBlue font-bold text-xl"
+        className="text-center font-Poppins text-customBlue dark:text-customViolet font-bold text-xl"
         data-aos="fade-up"
         data-aos-duration="1500"
       >
         Experties
       </h3>
       <h2
-        className="text-center font-Poppins text-4xl font-bold underline decoration-customBlue
+        className="text-center font-Poppins text-4xl font-bold underline decoration-customBlue dark:decoration-customViolet text-black dark:text-white
              decoration-4 underline-offset-[9px]"
         data-aos="fade-up"
         data-aos-duration="1500"
@@ -38,13 +38,13 @@ const Expertise = () => {
         data-aos-duration="1500"
       >
         <div
-          className="bg-customBlue text-white rounded-md lg:p-7 md:p-5 p-4 flex flex-col gap-3 md:order-1 order-1"
+          className="bg-customBlue dark:bg-customViolet text-white rounded-md lg:p-7 md:p-5 p-4 flex flex-col gap-3 md:order-1 order-1"
           data-aos="fade-up"
           data-aos-duration="1500"
         >
           <div className="flex flex-row gap-5 items-center">
             <div className="w-12 h-12 rounded-lg bg-white flex justify-center items-center">
-              <div className="text-2xl text-customBlue">
+              <div className="text-2xl text-customBlue dark:text-customViolet">
                 <FaPaintBrush />
               </div>
             </div>
@@ -64,22 +64,22 @@ const Expertise = () => {
           </div>
         </div>
         <div
-          className="rounded-md border-4 border-dashed border-customBlue lg:p-7 md:p-5 p-4 flex flex-col gap-3 md:order-2 order-2"
+          className="rounded-md border-4 border-dashed border-customBlue dark:border-customViolet lg:p-7 md:p-5 p-4 flex flex-col gap-3 md:order-2 order-2"
           data-aos="fade-up"
           data-aos-duration="1500"
         >
           <div className="flex flex-row gap-5 items-center">
-            <div className="w-12 h-12 rounded-lg bg-customBlue flex justify-center items-center">
+            <div className="w-12 h-12 rounded-lg bg-customBlue dark:bg-customViolet flex justify-center items-center">
               <div className="text-2xl text-white">
                 <FaCode />
               </div>
             </div>
 
-            <h3 className="text-xl font-bold font-Poppins">
+            <h3 className="text-xl font-bold font-Poppins text-black dark:text-white">
               Full Stack Development
             </h3>
           </div>
-          <div className="text-justify font-Poppins">
+          <div className="text-justify font-Poppins text-black dark:text-white">
             <p>
               As a full stack web developer, I specialize in crafting dynamic
               and responsive websites by seamlessly integrating both front-end
@@ -91,22 +91,22 @@ const Expertise = () => {
         </div>
 
         <div
-          className="rounded-md border-4 border-dashed border-customBlue lg:p-7 md:p-5 p-4 flex flex-col gap-3 md:order-3 order-4"
+          className="rounded-md border-4 border-dashed border-customBlue dark:border-customViolet lg:p-7 md:p-5 p-4 flex flex-col gap-3 md:order-3 order-4"
           data-aos="fade-up"
           data-aos-duration="1500"
         >
           <div className="flex flex-row gap-5 items-center">
-            <div className="w-12 h-12 rounded-lg bg-customBlue flex justify-center items-center">
+            <div className="w-12 h-12 rounded-lg bg-customBlue dark:bg-customViolet flex justify-center items-center">
               <div className="text-2xl text-white">
                 <FaUser />
               </div>
             </div>
 
-            <h3 className="text-xl font-bold font-Poppins">
+            <h3 className="text-xl font-bold font-Poppins text-black dark:text-white">
               Collaborative Development
             </h3>
           </div>
-          <div className="text-justify font-Poppins">
+          <div className="text-justify font-Poppins text-black dark:text-white">
             <p>
               Fostering a collaborative environment, I excel in working within
               cross-functional teams to build web solutions that seamlessly
@@ -117,13 +117,13 @@ const Expertise = () => {
           </div>
         </div>
         <div
-          className="bg-customBlue text-white rounded-md lg:p-7 md:p-5 p-4 flex flex-col gap-3 md:order-4 order-3"
+          className="bg-customBlue dark:bg-customViolet text-white rounded-md lg:p-7 md:p-5 p-4 flex flex-col gap-3 md:order-4 order-3"
           data-aos="fade-up"
           data-aos-duration="1500"
         >
           <div className="flex flex-row gap-5 items-center">
             <div className="w-12 h-12 rounded-lg bg-white flex justify-center items-center">
-              <div className="text-2xl text-customBlue">
+              <div className="text-2xl text-customBlue dark:text-customViolet">
                 <FaCog />
               </div>
             </div>

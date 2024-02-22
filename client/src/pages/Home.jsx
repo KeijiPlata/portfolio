@@ -30,7 +30,7 @@ function Home() {
       <Skills darkMode={darkMode} />
       <Expertise />
       <Certificates />
-      <Experience />
+      <Experience darkMode={darkMode}/>
       <LatestProject />
       <Footer />
     </div>

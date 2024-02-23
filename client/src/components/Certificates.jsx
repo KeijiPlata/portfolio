@@ -26,7 +26,7 @@ const Certificates = () => {
       title: "Finalist: AIA Lifehackers 2022 Hackventure",
       description:
         "Received 'Finalist: AIA Lifehackers 2022 Hackventure' certification for pitching our innovative business idea in the competition.",
-      tags: ["PUP", "AIA"],
+      tags: ["BPI", "AIA"],
       link: "https://drive.google.com/file/d/1BPOnaTI89FzfJ742EJTGzwGCrrHZm1dj/view?usp=sharing",
     },
     {

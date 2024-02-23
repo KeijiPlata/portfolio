@@ -40,7 +40,7 @@ const Experience = ({ darkMode }) => {
         >
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2023 - Present"
+            date="October 2023 - Present"
             iconStyle={{
               background: `${
                 darkMode ? "rgb(157,133,185)" : "rgb(150,185,208)"
@@ -75,7 +75,7 @@ const Experience = ({ darkMode }) => {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2020 - 2023"
+            date="October 2020 - September 2023"
             iconStyle={{
               background: `${
                 darkMode ? "rgb(157,133,185)" : "rgb(150,185,208)"

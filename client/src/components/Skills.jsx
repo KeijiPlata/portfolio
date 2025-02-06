@@ -9,10 +9,11 @@ import {
   FaBootstrap,
   FaFigma,
   FaPhp,
+  FaLaravel
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import {
-  SiCplusplus,
+  SiMongodb,
   SiMysql,
   SiHtml5,
   SiCss3,
@@ -48,9 +49,9 @@ const Skills = ({ darkMode }) => {
       link: "https://blog.hubspot.com/website/react-js",
     },
     {
-      icon: <SiCplusplus />,
-      name: "C++",
-      link: "https://www.w3schools.com/cpp/cpp_intro.asp",
+      icon: <FaLaravel />,
+      name: "Laravel",
+      link: "https://laravel.com/docs/11.x#meet-laravel",
     },
     {
       icon: <SiMysql />,
@@ -74,9 +75,9 @@ const Skills = ({ darkMode }) => {
       link: "https://blog.hubspot.com/website/what-is-tailwind-css",
     },
     {
-      icon: <SiServerless />,
-      name: "Serverless",
-      link: "https://www.serverless.com/",
+      icon: <SiMongodb />,
+      name: "MongoDB",
+      link: "https://www.mongodb.com/company/what-is-mongodb",
     },
     {
       icon: <FaBootstrap />,

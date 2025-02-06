@@ -1,17 +1,20 @@
 {
   "name": "client",
+  "homepage": "https://keijiplata.github.io/portfolio/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "@formspree/react": "^2.5.1",
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
+    "gh-pages": "^6.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",

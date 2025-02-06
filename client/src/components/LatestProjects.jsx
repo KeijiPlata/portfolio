@@ -1,5 +1,7 @@
 import React from "react";
 import Projects from "./Projects";
+import simple from "../images/project-mockup-design-simple.png";
+import simpleDark from "../images/project-mockup-design-simple-dark.png";
 import pilipinas from "../images/project-mockup-design.png";
 import cafeteria from "../images/project-mockup-design-caf.png";
 import rank from "../images/project-mockup-design-rank.png";
@@ -14,6 +16,15 @@ AOS.init();
 
 const LatestProject = ({ darkMode }) => {
   const data = [
+    {
+      name: "SimpleToDoApp",
+      image: simple,
+      imageDark: simpleDark,
+      link: "https://simpletodoapp-sigma.vercel.app/login",
+      description:
+        "Built a full-stack MERN task management application with a clean and intuitive UI for efficient to-do list organization, enabling users to seamlessly add, update, and delete tasks.",
+      tech: ["HTML", "CSS", "MongoDB", "ReactJS", "Tailwind"],
+    },
     {
       name: "Pili-pinas",
       image: pilipinas,

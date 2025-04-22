@@ -10,12 +10,23 @@ import pilipinasDark from "../images/project-mockup-design-dark.png";
 import cafeteriaDark from "../images/project-mockup-design-caf-dark.png";
 import rankDark from "../images/project-mockup-design-rank-dark.png";
 import glympseDark from "../images/project-mockup-design-glympse-dark.png";
+import botoko from "../images/project-mockup-design-botoko.png";
+import botokoDark from "../images/project-mockup-design-botoko-dark.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
 
 const LatestProject = ({ darkMode }) => {
   const data = [
+    {
+      name: "Botoko",
+      image: botoko,
+      imageDark: botokoDark,
+      link: "https://botoko.vercel.app/",
+      description:
+        "Built a web app for creating and sharing personalized voting lists for Halalan 2025. Designed for simplicity to promote informed choices among young Filipino voters.",
+      tech: ["HTML", "CSS", "NextJS", "TypeScript", "Tailwind"],
+    },
     {
       name: "SimpleToDoApp",
       image: simple,

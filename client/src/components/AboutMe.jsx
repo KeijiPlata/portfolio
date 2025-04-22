@@ -44,15 +44,17 @@ const AboutMe = ({ darkMode }) => {
               About Me
             </h2>
             <p className="text-justify mt-5 text-black dark:text-white">
-              As a recent graduate with a Diploma in Information Communication
-              Technology (DICT) and currently pursuing a Bachelor of Science in
-              Information Technology (BSIT), I am a highly motivated and
-              detail-oriented student. With a proven track record of strong
-              communication and analytical skills, I am adept at quickly
-              learning new technologies. I thrive in team environments and excel
-              at problem-solving. My passion for technology drives me to seek
-              challenging and dynamic work opportunities, where I can contribute
-              effectively to the industry's growth and innovation.
+              As a recent graduate with a Bachelor of Science in Information
+              Technology (BSIT) and a prior Diploma in Information Communication
+              Technology (DICT), I am a highly motivated and detail-oriented
+              developer with a strong foundation in web development. Over the
+              course of my studies, I have enhanced my skills in building
+              modern, responsive web applications using technologies like
+              ReactJS, Laravel, and MongoDB. I have a proven ability to learn
+              quickly, communicate effectively, and solve complex problems in
+              collaborative environments. Driven by a passion for technology and
+              continuous improvement, I am eager to contribute to innovative
+              projects and help create impactful digital solutions.
             </p>
           </div>
           <div

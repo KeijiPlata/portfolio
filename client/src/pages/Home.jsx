@@ -11,7 +11,7 @@ import Experience from "../components/Experience";
 import ToggleDarkMode from "../components/ToggleDarkMode";
 
 function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);

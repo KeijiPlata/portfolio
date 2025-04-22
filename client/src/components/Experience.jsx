@@ -40,7 +40,7 @@ const Experience = ({ darkMode }) => {
         >
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="October 2023 - Present"
+            date="October 2023 - March 2025"
             iconStyle={{
               background: `${
                 darkMode ? "rgb(157,133,185)" : "rgb(150,185,208)"
@@ -70,9 +70,13 @@ const Experience = ({ darkMode }) => {
               Polytechnic University of the Philippines
             </h4>
             <p className="text-justify text-white">
-              I'm currently studying again at PUP to get a bachelor degree.
+              I graduated again from PUP with a bachelor's degree in Information
+              Technology. During my final year, I worked on another capstone
+              project that strengthened my skills in software development and
+              enhanced my ability to write and present research papers.
             </p>
           </VerticalTimelineElement>
+
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="October 2020 - September 2023"
@@ -185,6 +189,47 @@ const Experience = ({ darkMode }) => {
               daily stand-up meetings to uphold program quality.
             </p>
           </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="June 2018 - April 2020"
+            iconStyle={{
+              background: `${
+                darkMode ? "rgb(157,133,185)" : "rgb(150,185,208)"
+              }`,
+              color: "#fff",
+            }}
+            contentStyle={{
+              background: `${
+                darkMode ? "rgb(157,133,185)" : "rgb(150,185,208)"
+              }`,
+              color: `${darkMode ? "#fff" : "#000"}`,
+              boxShadow: "none",
+            }}
+            contentArrowStyle={{
+              borderRight: `${
+                darkMode
+                  ? "7px solid  rgb(157,133,185)"
+                  : "7px solid  rgb(150,185,208)"
+              }`,
+            }}
+            icon={<IoSchoolSharp />}
+          >
+            <h3 className="vertical-timeline-element-title font-bold text-white">
+              TVL - Information and Communication Technology (Computer
+              Programming)
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle text-justify text-white">
+              STI College Ortigas-Cainta
+            </h4>
+            <p className="text-justify text-white">
+              I graduated from STI College Ortigas-Cainta as a Senior High
+              School student under the ICT strand, specializing in Computer
+              Programming using Java and .NET technologies. This track laid the
+              foundation for my journey in software development and sparked my
+              passion for coding.
+            </p>
+          </VerticalTimelineElement>
+
           <VerticalTimelineElement
             className="vertical-timeline-element--education"
             date="November 2019 - January 2020"

@@ -12,12 +12,23 @@ import rankDark from "../images/project-mockup-design-rank-dark.png";
 import glympseDark from "../images/project-mockup-design-glympse-dark.png";
 import botoko from "../images/project-mockup-design-botoko.png";
 import botokoDark from "../images/project-mockup-design-botoko-dark.png";
+import wedotap from "../images/project-mockup-design-wedotap.png";
+import wedotapDark from "../images/project-mockup-design-wedotap-dark.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
 
 const LatestProject = ({ darkMode }) => {
   const data = [
+    {
+      name: "WedoTap",
+      image: wedotap,
+      imageDark: wedotapDark,
+      link: "https://wedotap.com/",
+      description:
+        "Built a digital business card platform with NFC sharing capabilities, real-time analytics, and fully customizable profiles. Enables professionals to instantly share their digital identity with a single tap — no app needed.",
+      tech: ["Next.js", "TypeScript", "Supabase", "Tailwind"],
+    },
     {
       name: "Botoko",
       image: botoko,

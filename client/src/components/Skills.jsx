@@ -9,7 +9,10 @@ import {
   FaBootstrap,
   FaFigma,
   FaPhp,
-  FaLaravel
+  FaLaravel,
+  FaAws,
+  FaDocker,
+  FaVuejs,
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import {
@@ -19,6 +22,9 @@ import {
   SiCss3,
   SiTailwindcss,
   SiServerless,
+  SiSupabase,
+  SiNuxtdotjs,
+  SiPostgresql,
 } from "react-icons/si";
 import xanoLogo from "../images/cutbgxano.png";
 import Cards from "./Cards";
@@ -101,6 +107,31 @@ const Skills = ({ darkMode }) => {
       name: "Xano",
       link: "https://www.xano.com/",
     },
+    {
+      icon: <FaVuejs />,
+      name: "Vue",
+      link: "https://vuejs.org/",
+    },
+    {
+      icon: <SiNuxtdotjs />,
+      name: "Nuxt",
+      link: "https://nuxt.com/",
+    },
+    {
+      icon: <SiPostgresql />,
+      name: "PostgreSQL",
+      link: "https://www.postgresql.org/",
+    },
+    {
+      icon: <SiSupabase />,
+      name: "Supabase",
+      link: "https://supabase.com/",
+    },
+    {
+      icon: <FaDocker />,
+      name: "Docker",
+      link: "https://www.docker.com/",
+    },
   ];
   return (
     <div className="px-4 font-Poppins transition-all duration-500">
@@ -119,7 +150,7 @@ const Skills = ({ darkMode }) => {
       >
         My Skills
       </h2>
-      <div className="bg-customBlue dark:bg-customViolet transition-all duration-500 rounded-md w-100 md:h-[525px] lg:h-[575px] h-[900px] mt-10 mb-24 grid md:grid-cols-3 grid-cols-1">
+      <div className="bg-customBlue dark:bg-customViolet transition-all duration-500 rounded-md w-100 md:h-[680px] lg:h-[760px] h-[1230px] mt-10 mb-24 grid md:grid-cols-3 grid-cols-1">
         <div className="col-span-2 grid md:grid-cols-5 grid-cols-3 lg:p-6 md:p-4">
           {data.map((item, index) => (
             <Cards
@@ -133,11 +164,10 @@ const Skills = ({ darkMode }) => {
         <div className="md:flex md:justify-center hidden">
           <div
             style={{
-              backgroundImage: `url("${
-                darkMode ? backgroundDark : background
-              }")`,
+              backgroundImage: `url("${darkMode ? backgroundDark : background
+                }")`,
             }}
-            className="lg:w-[22rem] md:w-[16rem] md:h-[21rem] lg:h-[27rem] hidden md:block bg-cover bg-center self-center transition-all duration-500"
+            className="lg:w-[22rem] md:w-[16rem] md:h-[26rem] lg:h-[32rem] hidden md:block bg-cover bg-center self-center transition-all duration-500"
             data-aos="fade-up"
             data-aos-duration="1500"
           ></div>

@@ -40,6 +40,88 @@ const Experience = ({ darkMode }) => {
         >
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
+            date="April 2025 - Present"
+            iconStyle={{
+              background: `${
+                darkMode ? "rgb(157,133,185)" : "rgb(150,185,208)"
+              }`,
+              color: "#fff",
+            }}
+            contentStyle={{
+              background: `${
+                darkMode ? "rgb(157,133,185)" : "rgb(150,185,208)"
+              }`,
+              color: `${darkMode ? "#fff" : "#000"}`,
+              boxShadow: "none",
+            }}
+            contentArrowStyle={{
+              borderRight: `${
+                darkMode
+                  ? "7px solid  rgb(157,133,185)"
+                  : "7px solid  rgb(150,185,208)"
+              }`,
+            }}
+            icon={<MdWork />}
+          >
+            <h3 className="vertical-timeline-element-title font-bold text-white">
+              Full-Stack Web Developer
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle text-justify text-white">
+              RSB Consulting Inc.
+            </h4>
+            <p className="text-justify text-white">
+              Designed and implemented end-to-end features across HR, payroll,
+              finance, attendance, and project management modules. Built and
+              maintained RESTful APIs and microservices in Laravel with Vue/Nuxt
+              frontends. Collaborated with product managers, UI/UX designers,
+              QA, and senior developers in Agile sprints to translate business
+              requirements into production-ready features.
+            </p>
+          </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="October 2023 - March 2025"
+            iconStyle={{
+              background: `${
+                darkMode ? "rgb(157,133,185)" : "rgb(150,185,208)"
+              }`,
+              color: "#fff",
+            }}
+            contentStyle={{
+              background: `${
+                darkMode ? "rgb(157,133,185)" : "rgb(150,185,208)"
+              }`,
+              color: `${darkMode ? "#fff" : "#000"}`,
+              boxShadow: "none",
+            }}
+            contentArrowStyle={{
+              borderRight: `${
+                darkMode
+                  ? "7px solid  rgb(157,133,185)"
+                  : "7px solid  rgb(150,185,208)"
+              }`,
+            }}
+            icon={<MdWork />}
+          >
+            <h3 className="vertical-timeline-element-title font-bold text-white">
+              Freelance Full-Stack Web Developer
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle text-justify text-white">
+              Self-Employed
+            </h4>
+            <p className="text-justify text-white">
+              Built responsive websites and internal dashboards for small
+              businesses using Next.js, Laravel, and Tailwind, from brief to
+              deployment. Used AI tools to scaffold features, refactor code, and
+              deliver faster, more reliable releases. Collaborated directly with
+              founders and non-technical stakeholders to iterate quickly based
+              on feedback.
+            </p>
+          </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
             date="October 2023 - March 2025"
             iconStyle={{
               background: `${

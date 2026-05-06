@@ -35,17 +35,15 @@ const Introduction = ({ darkMode }) => {
               {" "}
               <TypeAnimation
                 sequence={[
+                  "Full Stack Developer",
+                  2000,
                   "Web Developer",
                   2000,
                   "App Developer",
                   2000,
-                  "Python Developer",
+                  "Freelancer",
                   2000,
-                  "Java Developer",
-                  2000,
-                  "Student",
-                  2000,
-                  "President Lister",
+                  "AI-Powered Dev",
                   2000,
                   "I Love Programming!",
                   2000,
